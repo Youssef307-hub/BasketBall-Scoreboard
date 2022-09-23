@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>BasketBall ScoreBoard</title>
+</head>
+<body>
+
+    <header id="header">
+        <h1>BASKETBALL SCOREBOARD</h1>
+    </header>
+
+    <!-- The Home and Guest score section -->
+    <section id="first-section" class="sections">
+        <div id="home">
+            <h3 class="title">HOME</h3>
+            <div id="home-score" class="board">0</div>
+            <button class="btn" onclick="addOnePointHome()">+1</button>
+            <button class="btn" onclick="addTwoPointsHome()">+2</button>
+            <button class="btn" onclick="addThreePointsHome()">+3</button>
+        </div>
+        <div id="guest">
+            <h3 class="title">GUEST</h3>
+            <div id="guest-score" class="board">0</div>
+            <button class="btn" onclick="addOnePointGuest()">+1</button>
+            <button class="btn" onclick="addTwoPointsGuest()">+2</button>
+            <button class="btn" onclick="addThreePointsGuest()">+3</button>
+        </div>
+    </section>
+
+    <!-- The Period, number of Fouls and Timer section -->
+    <section id="second-section" class="sections">
+        <div id="period-div">
+            <h3 class="title">PERIOD</h3>
+            <div id="period" class="board">0</div>
+        </div>
+        <div id="fouls-section">
+            <div class="fouls-subsection">
+                <h3 id="home-title" class="title">HOME FOULS</h3>
+                <div id="home-fouls" class="board">0</div>
+                <button class="btn" onclick="homeFoul()">+1</button>
+            </div>
+            <div class="fouls-subsection">
+                <h3 id="guest-title" class="title">GUEST FOULS</h3>
+                <div id="guest-fouls" class="board">0</div>
+                <button class="btn" onclick="guestFoul()">+1</button>
+            </div>
+        </div>
+        <div id="timer-div">
+            <h3 class="title">TIMER</h3>
+            <div id="timer" class="board">00:00</div>
+        </div>
+    </section>
+
+    <!-- The New Game button section -->
+    <section id="newgame-section">
+        <button id="newgame-btn" onclick="newGame()">NEW GAME</button>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

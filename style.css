@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url("font/CursedTimerUlil-Aznm.ttf");
+}
+
+body{
+    margin: 0;
+    background-color: #1B244A;
+    display: flex;
+    flex-direction: column;
+}
+
+.board{
+    margin: auto;
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    font-family: 'Cursed Timer ULiL';
+    font-size: 90px;
+    line-height: 127px;
+    color: #F94F6D;
+    border-radius: 5px;
+}
+
+.btn{
+    margin: 0;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9AABD8;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Cursed Timer ULiL';
+    color: #9AABD8;
+    margin: 25px 5px 0 5px;
+}
+
+.btn:hover{
+    background-color: #BAE6FD;
+    color: #080001;
+    border: 2px solid #080001;
+    transition: 10ms;
+}
+
+.btn:disabled{
+    margin: 0;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9AABD8;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Cursed Timer ULiL';
+    color: #9AABD8;
+    margin: 25px 5px 0 5px;
+    opacity: 0.5;
+}
+
+.title{
+    margin: 0 40px 30px 40px;
+    font-family: 'Verdana';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    color: #EEEEEE;
+}
+
+#header{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Verdana';
+    font-weight: 700;
+    font-size: 20px;
+    color:#080001;
+    background-color: #9AABD8;
+}
+
+.sections{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+#fouls-section{
+    display: flex;
+    text-align: center;
+}
+
+.fouls-subsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#newgame-section{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#newgame-btn{
+    margin: 0;
+    font-size: 90px;
+    color: #F94F6D;
+    font-family: 'Verdana';
+    background-color: #080001;
+    font-weight: 700;
+    padding: 15px 40px 5px 40px;
+    border: none;
+    border-bottom: 25px solid #9AABD8;
+    border-radius: 15px;
+}
+
+#newgame-btn:hover{
+    background-color: #F94F6D;
+    color: #080001;
+}
+
+#timer{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 0 25px;
+}
