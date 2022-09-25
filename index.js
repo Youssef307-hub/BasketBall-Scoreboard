@@ -3,45 +3,85 @@ let homeScore = 0, guestScore=0, homeFouls=0, guestFouls=0, quarterTime = 5, per
 
 // functions to update the points for both home and guest
 function addOnePointHome(){
-    homeScore += 1;
-    document.getElementById("home-score").textContent = homeScore;
+    if(quarterTime != 0){
+        homeScore += 1;
+        document.getElementById("home-score").textContent = homeScore;
+    }
+    else{
+        alert("Game Ended! You can't add points")
+    }
 }
 
 function addTwoPointsHome(){
-    homeScore += 2;
-    document.getElementById("home-score").textContent = homeScore;
+    if(quarterTime != 0){
+        homeScore += 2;
+        document.getElementById("home-score").textContent = homeScore;
+    }
+    else{
+        alert("Game Ended! You can't add points")
+    }
 }
 
 function addThreePointsHome(){
-    homeScore += 3;
-    document.getElementById("home-score").textContent = homeScore;
+    if(quarterTime != 0){
+        homeScore += 3;
+        document.getElementById("home-score").textContent = homeScore;
+    }
+    else{
+        alert("Game Ended! You can't add points")
+    }
 }
 
 function addOnePointGuest(){
-    guestScore += 1;
-    document.getElementById("guest-score").textContent = guestScore;
+    if(quarterTime != 0){
+        guestScore += 1;
+        document.getElementById("guest-score").textContent = guestScore;
+    }
+    else{
+        alert("Game Ended! You can't add points")
+    }
 }
 
 function addTwoPointsGuest(){
-    guestScore += 2;
-    document.getElementById("guest-score").textContent = guestScore;
+    if(quarterTime != 0){
+        guestScore += 2;
+        document.getElementById("guest-score").textContent = guestScore;
+    }
+    else{
+        alert("Game Ended! You can't add points")
+    }
 }
 
 function addThreePointsGuest(){
-    guestScore += 3;
-    document.getElementById("guest-score").textContent = guestScore;
+    if(quarterTime != 0){
+        guestScore += 3;
+        document.getElementById("guest-score").textContent = guestScore;
+    }
+    else{
+        alert("Game Ended! You can't add points")
+    }
 }
 
 
 // functions to update the fouls count for both home and guest
 function homeFoul(){
-    homeFouls += 1;
-    document.getElementById("home-fouls").textContent = homeFouls;
+    if(quarterTime != 0){
+        homeFouls += 1;
+        document.getElementById("home-fouls").textContent = homeFouls;
+    }
+    else{
+        alert("Game Ended! You can't add fouls")
+    }
 }
 
 function guestFoul(){
-    guestFouls += 1;
-    document.getElementById("guest-fouls").textContent = guestFouls;
+    if(quarterTime != 0){
+        guestFouls += 1;
+        document.getElementById("guest-fouls").textContent = guestFouls;
+    }
+    else{
+        alert("Game Ended! You can't add fouls")
+    }
 }
 
 
@@ -66,7 +106,6 @@ function timer(myFunction){
             period += 1;
             quarterTime = 5;
         }else{
-            quarterTime = 5;
             clearInterval(myFunction);
             document.getElementById("timer").textContent = "TIME!";
         }
